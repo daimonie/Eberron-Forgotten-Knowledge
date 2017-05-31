@@ -1,0 +1,55 @@
+\documentclass[11pt,a5paper,footinclude=true,headinclude=true,usenames,dvipsnames]{scrbook} 
+\usepackage[english]{babel}  
+\usepackage[T1]{fontenc}                
+\usepackage{lipsum}
+\usepackage[linedheaders,parts,pdfspacing]{classicthesis} 
+\usepackage{amsthm}
+
+\usepackage{wrapfig} 
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{plainnat}  
+\usepackage{braket} 
+\usepackage{fourier}
+\usepackage{mathrsfs}
+\usepackage{amsthm,amsmath,amssymb,amsfonts} 
+\usepackage[official]{eurosym}
+\usepackage{graphicx} 
+\usepackage{colortbl}
+\usepackage{dcolumn} 
+\usepackage{bm} 
+\usepackage{multicol} 
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{hyphenat}
+\usepackage{wrapfig}
+\usepackage{titling}
+\hypersetup{ 
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=OliveGreen,          % color of internal links (change box color with linkbordercolor)
+    citecolor=OliveGreen,        % color of links to bibliography
+    filecolor=OliveGreen,      % color of file links
+    urlcolor=OliveGreen           % color of external links
+}
+\title{Eberron: Forgotten Knowledge}
+\author{J. S. de Boer}
+\date{\today}
+\renewcommand{\thefootnote}{\Roman{footnote}}  
+\renewcommand\bibsection{\subsection{\refname}}
+\let\cleardoublepage\clearpage
+\begin{document}  
+
+\pretitle{%
+    \begin{center} 
+    \includegraphics[width=.95\textwidth]{fig/georgemartin}\\[\bigskipamount]
+}
+\posttitle{\end{center}}
+\maketitle 
+
+\tableofcontents  
+\cleardoublepage
+\part{Pre-Campaign preparation} 
+\input{precampaign}
+\part{Session Preparation and report}
+\input{sessions}
+\end{document}
